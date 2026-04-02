@@ -9,18 +9,21 @@ body {
 .main {
     display: flex;
     height: 100vh;
+    padding: 0.5rem;
 }
 
 .sidebar {
     background-color: green;
     width: 340px;
-    border-radius: 1rem;  /*16px*/
+    border-radius: 1rem;
+    /*16px*/
 }
 
 .main-content {
     background-color: #121212;
     flex: 1;
-    border-radius: 1rem;  /*16px*/
+    border-radius: 1rem;
+    /*16px*/
     overflow: auto;
 }
 
@@ -32,7 +35,7 @@ body {
     height: 72px;
 }
 
- a {
+a {
     text-decoration: none;
     color: #fff;
 }
@@ -66,3 +69,36 @@ body {
     opacity: 1;
 }
 
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.75rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons {
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i {
+    opacity: 0.7;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.icons i:hover {
+    opacity: 1;
+}
