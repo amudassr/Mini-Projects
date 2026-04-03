@@ -32,7 +32,7 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 60px;
+    height: 70px;
 }
 
 a {
@@ -402,4 +402,36 @@ h2 {
  .icon3 {
     opacity: 1;
     height: 2rem;
+}
+
+.playback-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bar {
+    width: 50%;
+    cursor: pointer;
+    appearance: none;
+    background-color: transparent;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    height: 0.2rem;
+    background-color: #ddd;
+    border-radius: 100px;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 0.85rem;
+    width: 0.85rem;
+    border-radius: 50%;
+    background-color: #1bd760;
+    margin-top: -5px;
+}
+
+.pak-time {
+    font-size: 0.85rem;
 }
