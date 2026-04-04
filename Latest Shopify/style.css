@@ -7,10 +7,14 @@ body {
 
 .main {
     display: flex;
+    flex-direction: column;
     height: 100vh;
+    overflow: hidden;
 }
 
 .navbar {
+    position: sticky;
+    top: 0;
     margin-top: 0.3rem;
     display: flex;
     align-items: center;
@@ -20,6 +24,7 @@ body {
     background-color: #000;
     color: #fff;
     font-size: 2rem;
+    flex-shrink: 0;
 }
 
 .left-navbar {
@@ -86,10 +91,22 @@ body {
 .right-navbar .para {
     padding-right: 1rem;
     display: flex;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     font-weight: 600;
     font-size: 0.96rem;
 }
+
+.right-navbar .para p {
+    margin: 0.4rem;
+    opacity: 0.6;  /* yahan lagao */
+    transition: opacity 0.2s ease;
+}
+
+.right-navbar .para p:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
 
 .badge {
     margin-left: 2rem;
@@ -100,12 +117,24 @@ body {
     font-size: 0.9rem;
     opacity: 0.6;
     font-weight: 600;
+    transition: opacity 0.2s ease;
+}
+
+.badge:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .sign-up {
     font-size: 0.9rem;
     opacity: 0.6;
-    font-weight: 600;
+    font-weight: 700;
+    transition: opacity 0.2s ease;
+}
+
+.sign-up:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .login {
@@ -114,13 +143,18 @@ body {
     border-radius: 2rem;
     font-weight: 600;
     margin: 1rem;
-    padding: 1rem 1.8rem;
+    padding: 0.85rem 1.8rem;
     background-color: #fff;
-    
+
 }
 
+.login:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
 
-/* }
 .sidebar {
     width: 27%;
     background-color: #000;
@@ -132,6 +166,7 @@ body {
     color: #fff;
     background-color: #121212;
     flex: 1;
+    overflow: auto
 }
 
 .signup {
@@ -142,4 +177,11 @@ body {
     height: 70px;
     border-radius: 0.5rem;
     margin: 0.2rem;
-} */
+}
+
+.middle {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    min-height: 0;
+}
