@@ -11,6 +11,7 @@ body {
 }
 
 .navbar {
+    margin-top: 0.3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,20 +23,38 @@ body {
 }
 
 .left-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 1rem;
     margin: 1rem;
 }
 
 .left-navbar i {
-    padding: 0.5rem;
-    font-size: 1.6rem;
+    /* padding: 0.5rem; */
+    font-size: 1.4rem;
 }
 
 .icon-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #292929;
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
+    padding: 0.2rem;
+    margin: 0.5rem;
+}
+
+.icon-logo:hover {
+    background-color: #535353;
+    cursor: pointer;
+}
+
+.logo i {
+    margin: 0.8rem;
+    font-size: 2rem;
 }
 
 .right-navbar {
