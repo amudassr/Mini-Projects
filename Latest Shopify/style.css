@@ -47,6 +47,20 @@ body {
     margin: 0.5rem;
 }
 
+.search {
+    opacity: 0.8;
+}
+
+.search:hover {
+    opacity: 1;
+}
+
+.home:hover {
+    transition: all 0.3s ease;
+}
+
+
+
 .icon-logo:hover {
     background-color: #535353;
     cursor: pointer;
@@ -62,7 +76,49 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 1rem;
+    /* padding: 1rem; */
 }
+
+.right-navbar p {
+    margin: 0.4rem;
+}
+
+.right-navbar .para {
+    padding-right: 1rem;
+    display: flex;
+    opacity: 0.6;
+    font-weight: 600;
+    font-size: 0.96rem;
+}
+
+.badge {
+    margin-left: 2rem;
+    margin: 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 0.9rem;
+    opacity: 0.6;
+    font-weight: 600;
+}
+
+.sign-up {
+    font-size: 0.9rem;
+    opacity: 0.6;
+    font-weight: 600;
+}
+
+.login {
+    margin-left: 1rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    margin: 1rem;
+    padding: 1rem 1.8rem;
+    background-color: #fff;
+    
+}
+
 
 /* }
 .sidebar {
