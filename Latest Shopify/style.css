@@ -478,3 +478,19 @@ h2:hover {
     height: 170px;
     border-radius: 50%;
 } 
+
+.footer {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 95%;
+    height: 5%;
+    border-top: 1px solid #fff;
+    opacity: 0.2;
+}
+
+
