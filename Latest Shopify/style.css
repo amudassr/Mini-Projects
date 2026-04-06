@@ -333,7 +333,7 @@ body {
 
 .box-p2 {
     font-size: 0.8rem;
-    opacity: 0.99;    
+    opacity: 0.99;
     cursor: context-menu;
     font-weight: 500;
 }
@@ -456,3 +456,27 @@ h2:hover {
     font-size: 0.9rem;
     opacity: 0.6;
 }
+
+.artist {
+    /* margin-top: 2rem; */
+}
+
+.popular {
+    margin-top: 4rem;
+}
+
+.artist-card {
+   
+    border-radius: 0.5rem;
+    padding: 0.7rem 0.7rem 0 0.7rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.artist-card-img {
+    width: 100%;
+     width: 170px;
+    height: 170px;
+    border-radius: 50%;
+} 
