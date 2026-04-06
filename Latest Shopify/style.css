@@ -250,6 +250,7 @@ body {
 }
 
 .sidebar {
+    margin-top: 0.2rem;
     height: 100%;
     width: 27%;
     min-width: 240px;
@@ -409,4 +410,49 @@ body {
 .globe p {
     font-size: 0.9rem;
     font-weight: 700;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid; */
+}
+
+h2 {
+    padding-left: 2.5rem;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+}
+
+h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.card {
+    width: 170px;
+    border-radius: 0.5rem;
+    padding: 0.7rem 0.7rem 0 0.7rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    background-color: #232323;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card-desc {
+    font-size: 0.9rem;
+    opacity: 0.6;
 }
