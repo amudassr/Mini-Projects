@@ -222,7 +222,8 @@ body {
     color: #fff;
     background-color: #121212;
     flex: 1;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     border-radius: 0.6rem;
     margin: 0.2rem 0 0 0.5rem;
 }
@@ -258,7 +259,7 @@ body {
     flex-direction: column;
     background-color: #121212;
     border-radius: 0.6rem;
-    overflow-y: hidden;
+    overflow-y: auto;
     flex-shrink: 0;
     color: #fff;
 }
@@ -586,4 +587,159 @@ h2:hover {
 
 .footer-top {
     margin-top: 1rem;
+}
+
+/* Media Queries For Footer  */
+
+/* Large screen  */
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+    padding: 0 1rem;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;   /* wrap add karo taake medium screen pe wrap ho */
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin: 1.5rem 2rem 0 0;
+    width: auto;
+    height: auto;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+/* Medium Screen (~900px to 1100px) */
+@media (max-width: 1100px) {
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 0.5rem;
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  /* 2 column grid */
+        flex: 1;
+    }
+
+    .social-icon {
+        margin: 1.5rem 1rem 0 0;
+    }
+
+    .list-style {
+        margin: 0.3rem 0.5rem;
+        padding: 0.4rem 0.5rem 0.4rem 1rem;
+    }
+}
+
+/* Small Screen (~700px)  */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;  /* column mein aa jao */
+        padding: 0 0.5rem;
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  /* 2 column grid */
+        width: 100%;
+    }
+
+    .list-style {
+        margin: 0.3rem 0;
+        padding: 0.4rem 0.5rem 0.4rem 1rem;
+    }
+
+    /* Social icons neeche alag row mein */
+    .social-icon {
+        flex-direction: row;
+        margin: 1.5rem 0 1rem 1rem;  /* left margin, neeche */
+        gap: 0.5rem;
+    }
+}
+
+
+/* Media Queries For Navbar  */
+
+
+/* Medium Screen (~900px to 1100px) -  */
+@media (max-width: 1100px) {
+    .search-bar {
+        width: 280px;        /* 440px tha, ab chota */
+    }
+
+    .right-navbar .para p {
+        font-size: 0.85rem;
+    }
+
+    .login {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .badge-install {
+        font-size: 0.8rem;
+        margin: 0.5rem;
+    }
+}
+
+/* Small Screen (~768px)  */
+@media (max-width: 768px) {
+
+    /* Search bar hide - sirf icon dikhao */
+    .search-bar {
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0;
+        border-radius: 50%;
+        overflow: hidden;
+        justify-content: center;
+        background-color: #292929;
+    }
+
+    /* Search input aur browse icon hide */
+    .search-input,
+    .search-browse {
+        display: none;
+    }
+
+    /* Search icon center mein */
+    .search-icon {
+        margin: 0;
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    /* Right navbar - Premium Support Download hide */
+    .right-navbar .para {
+        display: none;
+    }
+
+    /* Separator | hide */
+    .right-navbar > :not(button):not(.sign-up):not(.para) {
+        display: none;
+    }
+
+    .badge-install {
+        display: none;     /* Install App hide */
+    }
+
+    .right-navbar p.sign-up {
+        font-size: 0.85rem;
+    }
+
+    .login {
+        padding: 0.65rem 1rem;
+        font-size: 0.85rem;
+        margin: 0.5rem;
+    }
 }
