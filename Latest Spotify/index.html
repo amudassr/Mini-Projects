@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+
+    <!-- Title icon  -->
+    <link rel="icon" href="./images/logo.png">
+    <!-- CSS link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Main Section  -->
+    <div class="main">
+        <div class="navbar">
+            <div class="left-navbar">
+                <div class="logo">
+                    <i class="fa-brands fa-spotify"></i>
+                </div>
+
+                <div class="icon-logo home">
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732z">
+                        </path>
+                    </svg>
+                </div>
+
+                <div class="search-bar">
+                    <svg class="search-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z">
+                        </path>
+                    </svg>
+                    <input type="text" placeholder="What do you want to play?" class="search-input">
+                    <svg class="search-browse" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24">
+                        <path d="M15 15.5c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2"></path>
+                        <path
+                            d="M1.513 9.37A1 1 0 0 1 2.291 9h19.418a1 1 0 0 1 .979 1.208l-2.339 11a1 1 0 0 1-.978.792H4.63a1 1 0 0 1-.978-.792l-2.339-11a1 1 0 0 1 .201-.837zM3.525 11l1.913 9h13.123l1.913-9zM4 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4h-2V3H6v3H4z">
+                        </path>
+                    </svg>
+                </div>
+
+            </div>
+            <div class="right-navbar">
+                <div class="para">
+                    <p>Premium</p>
+                    <p>Support</p>
+                    <p>Download</p>
+                </div>
+                |
+                <button class="badge-install">
+                    <i class="fa-regular fa-circle-down"></i>
+                    Install App
+                </button>
+                <p class="sign-up">Sign up</p>
+
+                <button class="login">
+                    Log in
+                </button>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="sidebar">
+                <div class="library">
+                    <a href="#">Your Library</a>
+                    <div class="library-btn">
+                        <i class="fa-solid fa-plus sign"></i>
+                        <p>Create</p>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+
+                    <div class="box">
+                        <p class="box-p1">Let’s find some podcasts to follow</p>
+                        <p class="box-p2">We’ll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+
+                <div class="side-links">
+                    <a href="#">Legal</a>
+                    <a href="#">Safety & Privacy Center</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">About Ads</a>
+                    <a href="#">Accessibility</a>
+                </div>
+
+                <p class="cookies">Cookies</p>
+
+                <div class="language">
+                    <button class="globe">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>English</p>
+                    </button>
+                </div>
+
+
+            </div>
+            <div class="content">
+                <h2>Trending songs</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./images/Card1.jpeg" alt="" class="card-img">
+                        <p class="card-title">Majboor</p>
+                        <p class="card-desc">Sheheryar Rehan, Zoha Waseem</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/Card2.jpeg" alt="" class="card-img">
+                        <p class="card-title">Jaiye Sajana</p>
+                        <p class="card-desc">Shashwat Sachdev, Jasmine Sandlas</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/Card3.jpeg" alt="" class="card-img">
+                        <p class="card-title">Bairan</p>
+                        <p class="card-desc">Banjaare</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/Card4.jpeg" alt="" class="card-img">
+                        <p class="card-title">Khasara</p>
+                        <p class="card-desc">Abdul Hannan, Samar Jafri</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/Card5.jpeg" alt="" class="card-img">
+                        <p class="card-title">Bewajah</p>
+                        <p class="card-desc">Hasan Raheem, Umair</p>
+                    </div>
+                </div>
+
+                <h2 class="popular">Popular artists</h2>
+                <div class="cards-container">
+                    <div class="card artist-card">
+                        <img src="./images/artist1.jpeg" alt="" class="artist-card-img">
+                        <p class="card-title">Pritam</p>
+                        <p class="card-desc">Artist</p>
+                    </div>
+
+                    <div class="card artist-card">
+                        <img src="./images/artist2.jpeg" alt="" class="artist-card-img">
+                        <p class="card-title">Afusic</p>
+                        <p class="card-desc">Artist</p>
+                    </div>
+
+                    <div class="card artist-card">
+                        <img src="./images/artist3.jpeg" alt="" class="artist-card-img">
+                        <p class="card-title">Atif Aslam</p>
+                        <p class="card-desc">Artist</p>
+                    </div>
+
+                    <div class="card artist-card">
+                        <img src="./images/artist4.jpeg" alt="" class="artist-card-img">
+                        <p class="card-title">Shubh</p>
+                        <p class="card-desc">Artist</p>
+                    </div>
+
+                    <div class="card artist-card">
+                        <img src="./images/artist5.jpeg" alt="" class="artist-card-img">
+                        <p class="card-title">Anuv Jain</p>
+                        <p class="card-desc">Artist</p>
+                    </div>
+                </div>
+
+                <h2 class="popular">Popular albums and singles</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./images/album1.jpeg" alt="" class="card-img">
+                        <p class="card-title">Pal Pal</p>
+                        <p class="card-desc">Afusic, AliSoomroMusic</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/album2.jpeg" alt="" class="card-img">
+                        <p class="card-title">Sicario</p>
+                        <p class="card-desc">Shubh</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/album3.jpeg" alt="" class="card-img">
+                        <p class="card-title">Jhool</p>
+                        <p class="card-desc">Maanu, Annural Khalid</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/album4.jpeg" alt="" class="card-img">
+                        <p class="card-title">Safar</p>
+                        <p class="card-desc">Bayaan</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/album5.jpeg" alt="" class="card-img">
+                        <p class="card-title">Afsos</p>
+                        <p class="card-desc">Anuv Jain, AP Dhillon</p>
+                    </div>
+                </div>
+
+
+                <h2 class="popular">Popular radio</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./images/radio1.jpeg" alt="" class="card-img">
+                        <p class="card-desc">With Sachin-Jigar, Pritam, Ankit Tiwari...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/radio2.jpeg" alt="" class="card-img">
+                        <p class="card-desc">With Karan Aujla, AP Dhillon, Yo YO Honey...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/radio3.jpeg" alt="" class="card-img">
+                        <p class="card-desc">With Karan Aujla, AP Dhillon, Yo YO Honey...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/radio4.jpeg" alt="" class="card-img">
+                        <p class="card-desc">With Jind Universe, NDS, Push Kahlon...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/radio5.jpeg" alt="" class="card-img">
+                        <p class="card-desc">With Shubh, Prem Dhillon, Khan Bhaini...</p>
+                    </div>
+                </div>
+
+
+                <h2 class="popular">Featured Charts</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./images/chart1.jpg" alt="" class="card-img">
+                        <p class="card-desc">Your weekly update of the most play tracks...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/chart2.jpg" alt="" class="card-img">
+                        <p class="card-desc">Your weekly update of the most play tracks...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/chart3.jpg" alt="" class="card-img">
+                        <p class="card-desc">Your daily update of the most play tracks...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/chart4.jpg" alt="" class="card-img">
+                        <p class="card-desc">Your weekly update of the most play tracks...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/chart5.jpg" alt="" class="card-img">
+                        <p class="card-desc">Your weekly update of the most viral tracks...</p>
+                    </div>
+                </div>
+
+                <!-- Footer line  -->
+                <div class="footer footer-top">
+                    <div class="line"></div>
+                </div>
+
+                <!-- Footer Section  -->
+                <div class="conatiner">
+                    <div class="footer-container">
+                        <div class="links">
+                            <div class="company list-style">
+
+                                <h4 class="top-links">Company</h4>
+                                <ul>
+                                    <li>About</li>
+                                    <li>Jobs</li>
+                                    <li>For the Record</li>
+                                </ul>
+                            </div>
+
+                            <div class="Communities list-style">
+
+                                <h4 class="top-links">Communities</h4>
+                                <ul>
+                                    <li>For Artists</li>
+                                    <li>Developers</li>
+                                    <li>Advertising</li>
+                                    <li>Investors</li>
+                                    <li>Vendors</li>
+                                </ul>
+                            </div>
+
+                            <div class="Useful-links list-style">
+
+                                <h4 class="top-links">Useful links</h4>
+                                <ul>
+                                    <li>Support</li>
+                                    <li>Free Mobile App</li>
+                                    <li>Popular by Country</li>
+                                    <li>Import your music</li>
+                                </ul>
+                            </div>
+
+                            <div class="Spotify-Plans list-style">
+                                <h4 class="top-links">Spotify Plans</h4>
+                                <ul>
+                                    <li>Premium Duo</li>
+                                    <li>Premium Family</li>
+                                    <li>Premium Student</li>
+                                    <li>Spotify Free</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="social-icon">
+                            <div class="insta icon-option">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="twitter icon-option">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="facebook icon-option">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Footer line  -->
+                <div class="footer">
+                    <div class="line"></div>
+                </div>
+
+                <!-- Copyright symbol  -->
+                <div class="copy-right">
+                    <p>&copy; 2026 Spotify AB</p>
+                </div>
+
+
+            </div>
+
+            <div class="signup">
+                <p style="font-size: 0.8rem; font-weight: 800;">Preview of Spotify
+                    <br>
+                <span style="font-size: 0.9rem; font-weight: 500;">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</span></p>
+
+                <button class="free">Sign up for free</button>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
