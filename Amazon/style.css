@@ -163,3 +163,33 @@ span {
     font-size: 0.9rem;
     font-weight: 700;
 }
+
+/** Panel **/
+
+.panel {
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-all {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.panel-options p {
+    padding: 0 0.5rem;
+    display: inline;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.panel-options {
+    width: 82%;
+}
+
+.panel-deals {
+    font-size: 1rem;
+}
