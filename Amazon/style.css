@@ -179,11 +179,20 @@ span {
     font-size: 0.9rem;
     font-weight: 700;
 }
+
+.panel-all {
+    cursor: pointer;
+}
+
 .panel-options p {
     margin-left: 15px;
     display: inline;
     font-size: 0.9rem;
     font-weight: 500;
+}
+
+.panel-options:hover {
+    cursor: pointer;
 }
 
 .panel-options {
@@ -194,6 +203,12 @@ span {
     font-size: 1rem;
     font-weight: 700;
 }
+
+.panel-deals:hover {
+    cursor: pointer;
+}
+
+/** Hero Section **/
 
 .hero-section {
     background-image: url(./images/hero_image1.jpg);
@@ -220,6 +235,8 @@ span {
     color: #007185;
 }
 
+/** Shop Section **/
+
 .shop-section {
     display: flex;
     justify-content: space-evenly;
@@ -229,7 +246,7 @@ span {
 
 .box {
     /* border: 1px solid; */
-    height: 420px;
+    height: 440px;
     width: 23%;
     background-color: #fff;
     padding: 20px 0px 15px;
@@ -262,4 +279,72 @@ span {
 .box-content p:hover {
     cursor: pointer;
     color: #0f1111;
+}
+
+.box-para {
+    margin-top: 2rem;
+}
+
+
+/** Nest Shop Crad **/
+
+.nest-shop-card {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    background-color: #e2e7e6;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nest-shop-card .box {
+    height: auto;
+    width: 23.5%;
+}
+
+
+.nest-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* margin-bottom: 0.8rem; */
+}
+
+.nest-item {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nest-img {
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nest-img:hover {
+    cursor: pointer;
+}
+
+.nest-label {
+    font-size: 0.8rem;
+    color: #0f1111 !important;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.nest-label:hover {
+    cursor: pointer;
+}
+
+.nest-shop-card .box-content p:last-child {
+    color: #2162A1;
+    font-size: 0.85rem;
+}
+
+.nest-para {
+    margin-top: 1.5rem;
 }
