@@ -258,10 +258,12 @@ span {
     background-size: cover;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    transition: transform 0.3s ease;
 }
 
 .box-img:hover {
     cursor: pointer;
+    transform :scale(1.03);
 }
 
 .box-content {
@@ -315,6 +317,7 @@ span {
 .nest-item {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 
@@ -323,16 +326,18 @@ span {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: transform  0.3s ease;
 }
 
 .nest-img:hover {
+    transform: scale(1.07);
     cursor: pointer;
 }
 
 .nest-label {
     font-size: 0.8rem;
     color: #0f1111 !important;
-    margin-top: 4px;
+    margin-top: 8px;
     margin-bottom: 8px;
 }
 
